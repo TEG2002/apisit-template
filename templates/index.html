@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4 text-center">
+
+  <!-- หัวข้อ -->
+  <h1 class="display-4 mb-3 fw-bold" style="color:#a084ee; text-shadow: 2px 2px 8px #2b1055;">Welcome to my Apisit Template</h1>
+
+  <!-- รูปโปรไฟล์ -->
+  <div style="position: relative; display: inline-block;">
+    <img src="https://cdn.discordapp.com/attachments/1363472938946265141/1369003048013140112/IMG_8369.jpg?ex=687149f1&is=686ff871&hm=bb95c2651afa1240ad53babe86729d86277d47da5c7bf6659e41a1d55e8727fc&" 
+         alt="Profile" 
+         class="rounded-circle shadow mb-4 border border-info border-4"
+         style="width: 180px; height: 180px; box-shadow: 0 0 32px 4px #6a11cb, 0 0 0 8px #2b1055;">
+    <!-- เพิ่มดาวรอบรูป -->
+    <span style="position:absolute;top:10px;left:-30px;font-size:2rem;color:#fffacd;filter:drop-shadow(0 0 6px #fff);">★</span>
+    <span style="position:absolute;bottom:10px;right:-30px;font-size:1.5rem;color:#b39ddb;filter:drop-shadow(0 0 6px #fff);">✦</span>
+    <span style="position:absolute;top:0;right:0;font-size:1.2rem;color:#ffd6fa;filter:drop-shadow(0 0 4px #fff);">✧</span>
+  </div>
+
+  <!-- คำอธิบายสั้น -->
+  <p class="lead" style="color:#e0e0ff; text-shadow: 1px 1px 6px #2b1055;">
+    เว็บไซต์นี้คือผลงานหนึ่งในวิชาชีวิตของเด็กวิทย์คอม ที่ตั้งใจพัฒนาด้วยแรงใจและแรง Ctrl+S 🚀🪐
+  </p>
+
+  <!-- การ์ดแนะนำตัว -->
+  <div class="card mx-auto mt-4 shadow-lg" style="max-width: 500px; background: rgba(42,0,80,0.85); border: 1.5px solid #6a11cb;">
+    <div class="card-body">
+      <h5 class="card-title" style="color:#a084ee; font-weight:bold;">
+        <i class="fas fa-user-astronaut me-2"></i>About Me
+      </h5>
+      <p class="card-text" style="color:#e0e0ff;">
+        ผมเป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์ ที่ใช้ชีวิตวนอยู่กับโค้ด บั๊ก และกาแฟ ☕<br>
+        <br>
+        บางวันก็อยู่กับ Python 🐍 บางคืนก็นั่งงงกับ CSS ที่ไม่ยอมขึ้นสักที 😵‍💫 <br>
+        แต่ไม่ว่าจะหนักแค่ไหน เราก็ยังรักในโลกของเทคโนโลยี เพราะมันคือพื้นที่ที่เราได้ “สร้าง” อะไรใหม่ ๆ ทุกวัน ✨<br>
+        <br>
+        หากมีคำถาม ข้อเสนอแนะ หรืออยากส่งกำลังใจ สามารถส่งอีเมลมาได้ที่ :<br>
+        <a href="mailto:apisitget67@gmail.com" class="text-decoration-none" style="color:#ffd6fa;">apisitget67@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Space effect background -->
+<style>
+  body {
+    background: radial-gradient(ellipse at bottom, #2b1055 0%, #12022f 100%) !important;
+    font-family: 'Kanit', sans-serif;
+  }
+  /* เพิ่มดาวอวกาศ */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: url('https://svgshare.com/i/12dF.svg') repeat;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .text-pink {
+    color: #d63384;
+  }
+</style>
+{% endblock %}

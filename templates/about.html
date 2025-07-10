@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}เกี่ยวกับเรา{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+
+  <!-- หัวข้อหลัก -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold" style="color:#a084ee; text-shadow: 2px 2px 8px #2b1055;">เกี่ยวกับเรา</h1>
+    <h2 class="text-ufo">นาย อภิสิทธิ์ สุนันท์ <span class="badge bg-ufo">6712732119</span></h2>
+    <p class="lead" style="color:#b39ddb;">เราคือหนึ่งในนักศึกษาที่เรียนในสาขาวิทยาการคอมพิวเตอร์ ด้วยความรักในเทคโนโลยีและความตั้งใจ</p>
+  </div>
+
+  <!-- สติกเกอร์ธีมอวกาศ (SVG ดาวเคราะห์) -->
+  <div class="text-center mb-4">
+    <svg width="120" height="120" viewBox="0 0 120 120" style="animation: planet-float 3s ease-in-out infinite;">
+      <!-- วงกลมดาวเคราะห์ -->
+      <circle cx="60" cy="60" r="38" fill="#a084ee" stroke="#6a11cb" stroke-width="4"/>
+      <!-- วงแหวน -->
+      <ellipse cx="60" cy="70" rx="48" ry="12" fill="none" stroke="#e0e0ff" stroke-width="3" opacity="0.7"/>
+      <!-- จุดลาย -->
+      <ellipse cx="75" cy="55" rx="7" ry="3" fill="#fffde7" opacity="0.7"/>
+      <ellipse cx="50" cy="70" rx="5" ry="2" fill="#b39ddb" opacity="0.5"/>
+      <ellipse cx="65" cy="80" rx="4" ry="1.5" fill="#ffd6fa" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- วิสัยทัศน์ -->
+  <div class="p-4 mb-4 rounded-4" style="background: rgba(160,132,238,0.12); border-left: 5px solid #6a11cb;">
+    <h3 class="text-ufo">🌌 วิสัยทัศน์ (Vision)</h3>
+    <p class="text-space">มุ่งมั่นเป็นผู้นำด้านเทคโนโลยีการจัดการการขาย ที่ตอบโจทย์ทุกกลุ่มธุรกิจ ด้วยเครื่องมือที่ใช้งานง่ายและทันสมัย</p>
+    <hr style="border-top: 2px solid #a084ee;">
+    <h5 class="mt-3" style="color:#a084ee;">💡 บทบาทของสาขาวิทยาการคอมพิวเตอร์</h5>
+    <p class="text-space">
+      สาขาวิทยาการคอมพิวเตอร์มีบทบาทสำคัญในการพัฒนาแอปพลิเคชันด้านธุรกิจ โดยเฉพาะการออกแบบระบบที่ช่วยจัดการข้อมูลการขาย การวิเคราะห์ข้อมูลลูกค้า และการปรับปรุงประสิทธิภาพของธุรกิจให้ทันสมัยและสอดคล้องกับยุคดิจิทัล
+    </p>
+    <ul class="ms-3 text-space">
+      <li>สร้างระบบที่มีความปลอดภัยและเสถียร</li>
+      <li>นำปัญญาประดิษฐ์ (AI) และการวิเคราะห์ข้อมูลมาใช้</li>
+      <li>พัฒนาแอปพลิเคชันที่ตอบโจทย์ผู้ใช้จริง</li>
+      <li>ส่งเสริมการเรียนรู้และนวัตกรรมในด้านเทคโนโลยีสารสนเทศ</li>
+    </ul>
+  </div>
+
+  <!-- ทีมอาจารย์ -->
+  <div class="p-4 mb-4 rounded-4" style="background: rgba(42,16,85,0.18); border-left: 5px solid #a084ee;">
+    <h3 class="text-center" style="color:#a084ee;">🪐 อาจารย์ที่เรารักและเคารพ</h3>
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์1.jpg' %}" class="rounded-circle shadow mb-3 border border-ufo border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-ufo">ผศ.พิศาล สุขขี</h5>
+        <p class="text-muted">อาจารย์ที่ปรึกษาโครงการ</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์2.jpg' %}" class="rounded-circle shadow mb-3 border border-ufo border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-ufo">ผศ.ดร.กนิษฐา อินธิชิต</h5>
+        <p class="text-muted">อาจารย์ผู้สอน</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์3.jpg' %}" class="rounded-circle shadow mb-3 border border-ufo border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-ufo">อ.อุรารัตย์ แก้งดวงงาม</h5>
+        <p class="text-muted">อาจารย์ผู้สอน</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์4.png' %}" class="rounded-circle shadow mb-3 border border-ufo border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-ufo">ดร.กริชบดินทร์ ผิวหอม</h5>
+        <p class="text-muted">อาจารย์ผู้สอน</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom สีและเอฟเฟกต์อวกาศ -->
+<style>
+  body {
+    background: radial-gradient(ellipse at bottom, #2b1055 0%, #12022f 100%) !important;
+    font-family: 'Kanit', sans-serif;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: url('https://svgshare.com/i/12dF.svg') repeat;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .text-ufo {
+    color: #a084ee;
+    text-shadow: 1px 1px 8px #2b1055;
+    font-weight: bold;
+  }
+  .bg-ufo {
+    background-color: #a084ee !important;
+    color: #fff !important;
+  }
+  .border-ufo {
+    border-color: #a084ee !important;
+  }
+  .text-space {
+    color: #e0e0ff;
+    text-shadow: 1px 1px 6px #2b1055;
+    font-size: 1.08rem;
+  }
+  @keyframes planet-float {
+    0% { transform: translateY(0);}
+    50% { transform: translateY(-18px);}
+    100% { transform: translateY(0);}
+  }
+</style>
+
+{% endblock %}
